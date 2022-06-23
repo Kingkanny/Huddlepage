@@ -1,0 +1,141 @@
+:root {
+--Violet: hsl(257, 40%, 49%);
+--soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Violet);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    padding-top: 80px;
+    margin: 0 2rem;
+    
+}
+
+.header {
+    height: 42.05px;
+    padding-top: 50px;
+}
+
+.header img {
+   width: 190px; 
+   margin: 0 2rem;
+}
+
+.hero-text {
+    height: 400px;
+}
+
+.hero-text h1{
+    color: white;
+    padding: 0 0 20px;
+    margin: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    margin: 10px 25px;
+    padding: 0 0 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+}
+
+.hero-text a {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    background: white;
+    padding: 10px 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 20px;
+    box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-text a:hover {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 30px;
+    height: 100vh;
+
+}
+
+.socials {
+    text-align: right;
+    display: flex;
+    position: absolute;
+    height: 19px;
+    bottom: 40px;
+    right: 70px;
+    gap: 70px;
+}
+
+.socials a i {
+    color: white;
+    position: relative;
+    font-size: 30px;
+}
+.socials a i::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    height: 50px;
+    width: 50px;
+    left: -14px;
+    bottom: -11px;
+
+}
+
+
+.socials a:hover i {
+    color: var(--soft-magenta);
+}
+
+
+@media only screen and (max-width:760px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+
+    .socials {
+        text-align: center;
+        display: flex;
+        height: 19px;
+        top: 930px;
+        right: 80px;
+        gap: 70px;
+    }
+    
+}
+
